@@ -1,0 +1,52 @@
+{
+  "name": "jsm2c",
+  "version": "0.0.1",
+  "description": "将采用commonJS规范的模块化代码，转译成闭包形式的代码",
+  "main": "index.js",
+  "scripts": {
+    "debug": "supervisor --debug-brk ./debug.js",
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "./node_modules/mocha/bin/_mocha --recursive ./test",
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly  --recursive ./test/** && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smocean/jsm2c.git"
+  },
+  "keywords": [
+    "commonJS",
+    "module",
+    "closure"
+  ],
+  "author": "guomilo <guomilo@gmail.com>",
+  "engines": {
+    "node": ">0.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/smocean/jsm2c/issues"
+  },
+  "homepage": "https://github.com/smocean/jsm2c#readme",
+  "dependencies": {
+    "escodegen": "1.8.0",
+    "esprima": "2.7.2",
+    "esquery": "0.4.0",
+    "estraverse": "4.2.0",
+    "immutable": "3.8.1"
+  },
+
+  "maintainers": [
+    "guomilo <guomilo@gmail.com>"
+  ],
+  "directories": {},
+    "devDependencies": {
+    "autod": "2.5.1",
+    "chai": "3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.7.0",
+    "eslint-config-sm": "^0.1.20",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "mocha-lcov-reporter": "^1.2.0"
+  },
+  "license": "MIT"
+}
