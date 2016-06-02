@@ -1,6 +1,6 @@
 {
   "name": "jsm2c",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "将采用commonJS规范的模块化代码，转译成闭包形式的代码",
   "main": "index.js",
   "scripts": {
@@ -33,12 +33,11 @@
     "estraverse": "4.2.0",
     "immutable": "3.8.1"
   },
-
   "maintainers": [
     "guomilo <guomilo@gmail.com>"
   ],
   "directories": {},
-    "devDependencies": {
+  "devDependencies": {
     "autod": "2.5.1",
     "chai": "3.5.0",
     "coveralls": "^2.11.9",
