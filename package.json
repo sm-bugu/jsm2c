@@ -1,6 +1,6 @@
 {
   "name": "jsm2c",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "将采用commonJS规范的模块化代码，转译成闭包形式的代码",
   "main": "index.js",
   "scripts": {
